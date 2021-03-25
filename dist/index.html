@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="main.css">
+    <title>My Project</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar__address">
+                    <div class="navbar__address__left">
+                        <a href="#" class="primary-text"><i class="fas fa-map-marker-alt fa-2x"></i></a>
+                    </div>
+                    <div class="navbar__address__right">
+                        <p class="grey-text hover-primary-text">Выбрать ресторан самовывоза</p>
+                        <p>Сенная пл., 80</p>
+                    </div>
+                </div>
+                <div class="navbar__phone">
+                    <div class="navbar__phone__left">
+                        <a href="" class="primary-text"><i class="fas fa-phone-alt fa-2x"></i></a>
+                    </div>
+                    <div class="navbar__phone__right">
+                        <p class="grey-text hover-primary-text">Единый телефон</p>
+                        <p>8(812)555-05-XX</p>
+                    </div>
+                </div>
+                <ul class="navbar__menu">
+                    <li><a class="hover-primary-text" href="">Доставка</a></li>
+                    <li><a class="hover-primary-text" href="">О компании</a></li>
+                    <li><a class="hover-primary-text" href="">Вакансии</a></li>
+                    <li><a class="hover-primary-text" href="">Бонусы и карты</a></li>
+                    <li><a class="hover-primary-text" href="">Контакты</a></li>
+                </ul>
+            </div>    
+        </div>
+    </nav>
+
+    <div class="navbar-extra-wrapper">
+        <div class="container">
+            <div class="navbar-extra">
+                <div class="navbar-extra__sidenav-trigger">
+                </div>
+                <ul class="navbar-extra__menu">
+                    <li><a href="" class="hover-primary-text">МЕНЮ</a></li>
+                    <li><a href="" class="hover-primary-text">АКЦИИ</a></li>
+                    <li><a href="" class="hover-primary-text">РЕСТОРАНЫ</a></li>
+                </ul>
+                <div class="navbar-extra__logo">
+                    <h1>BEST SUSHI</h1>
+                </div>
+                <ul class="navbar-extra__profile">
+                    <li><a href="" class="hover-primary-text">
+                        <span>ПРОФИЛЬ</span>
+                        <span><i class="far fa-user fa-2x"></i></span>
+                    </a></li>
+                    <li><a href="" class="hover-primary-text"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-content">
+        <h1 class="main-title">Суши №1</h1>
+        <p class="subtitle my-0">BEST SUSHI  - самый лучший суши-бар в Санкт-Петербурге</p>
+    </div>
+</header>
+
+<div class="sidenav">
+    <div class="sidenav__close">X</div>
+    <ul class="sidenav__menu">
+        <li><a href=""><strong>МЕНЮ</strong></a></li>
+        <li><a href=""><strong>АКЦИИ</strong></a></li>
+        <li><a href=""><strong>О КОМПАНИИ</strong></a></li>
+        <div class="sidenav__menu__submenu">
+            <li><a href="">ДОСТАВКА</a></li>
+            <li><a href="">О КОМПАНИИ</a></li>
+            <li><a href="">ВАКАНСИИ</a></li>
+            <li><a href="">БОНУСЫ И КАРТЫ</a></li>
+            <li><a href="">КОНТАКТЫ</a></li>
+        </div>
+    </ul>
+</div>
+
+<section id="home-A" class="icons-container p-1">
+    <div class="container">
+        <div class="icons py-4">
+            <a href="#" class="icons__item">
+                <img src="./img/icon1.svg" alt="">
+                <p>Смотреть меню</p>
+            </a>
+            <a href="#" class="icons__item">
+                <img src="./img/icon2.svg" alt="">
+                <p>Спиртное</p>
+            </a>
+            <a href="#" class="icons__item">
+                <img src="./img/icon3.svg" alt="">
+                <p>Вегетарианское меню</p>
+            </a>
+            <a href="#" class="icons__item">
+                <img src="./img/icon4.svg" alt="">
+                <p>Суши бар</p>
+            </a>
+            <a href="#" class="icons__item">
+                <img src="./img/icon5.svg" alt="">
+                <p>Салаты</p>
+            </a>
+            <a href="#" class="icons__item">
+                <img src="./img/icon6.svg" alt="">
+                <p>Закуски</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="home-B" class="text-center">
+    <div class="container">
+          <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""> </div>
+      <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""> </div>
+      <div class="swiper-slide"><img src="./img/slide3.jpg" alt=""> </div>
+      <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""> </div>
+      <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""> </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <a href="#" class="btn btn-inline btn-border hover-primary-bg my-2">Все акции</a>
+    </div>
+</section>
+
+<section id="home-C" class="p-1">
+    <div class="container">
+        <div class="food-wrapper py-1">
+            <h1 class="title myt-0">Доступны к заказу онлайн</h1>
+                      <!-- Swiper -->
+            <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide-item">
+                        <div class="swiper-slide-item__image">
+                            <img src="./img/sushi1.jpg" alt=""> 
+                        </div><br>
+                        <div class="swiper-slide-item__desc">
+                            <small class="swiper-slide__desc__title">Набор Суши1</small>
+                            <span class="swiper-slide__desc__price secondary-text">650Р</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                    <div class="swiper-slide-item">
+                        <div class="swiper-slide-item__image">
+                            <img src="./img/sushi2.jpg" alt=""> 
+                        </div><br>
+                        <div class="swiper-slide-item__desc">
+                            <small class="swiper-slide__desc__title">Набор Суши2</small>
+                            <span class="swiper-slide__desc__price secondary-text">680Р</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                                        <div class="swiper-slide-item">
+                        <div class="swiper-slide-item__image">
+                            <img src="./img/sushi3.jpg" alt=""> 
+                        </div><br>
+                        <div class="swiper-slide-item__desc">
+                            <small class="swiper-slide__desc__title">Набор Суши3</small>
+                            <span class="swiper-slide__desc__price secondary-text">700Р</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                                        <div class="swiper-slide-item">
+                        <div class="swiper-slide-item__image">
+                            <img src="./img/sushi1.jpg" alt=""> 
+                        </div><br>
+                        <div class="swiper-slide-item__desc">
+                            <small class="swiper-slide__desc__title">Набор Суши4</small>
+                            <span class="swiper-slide__desc__price secondary-text">630Р</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                                        <div class="swiper-slide-item">
+                        <div class="swiper-slide-item__image">
+                            <img src="./img/sushi2.jpg" alt=""> 
+                        </div><br>
+                        <div class="swiper-slide-item__desc">
+                            <small class="swiper-slide__desc__title">Набор Суши5</small>
+                            <span class="swiper-slide__desc__price secondary-text">900Р</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                    <div class="swiper-slide-item">
+                        <div class="swiper-slide-item__image">
+                            <img src="./img/sushi3.jpg" alt=""> 
+                        </div><br>
+                        <div class="swiper-slide-item__desc">
+                            <small class="swiper-slide__desc__title">Набор Суши6</small>
+                            <span class="swiper-slide__desc__price secondary-text">500Р</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                    <div class="swiper-slide-item">
+                        <div class="swiper-slide-item__image">
+                            <img src="./img/sushi1.jpg" alt=""> 
+                        </div><br>
+                        <div class="swiper-slide-item__desc">
+                            <small class="swiper-slide__desc__title">Набор Суши7</small>
+                            <span class="swiper-slide__desc__price secondary-text">850Р</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"> 
+                    <div class="swiper-slide-item">
+                        <div class="swiper-slide-item__image">
+                            <img src="./img/sushi2.jpg" alt=""> 
+                        </div><br>
+                        <div class="swiper-slide-item__desc">
+                            <small class="swiper-slide__desc__title">Набор Суши8</small>
+                            <span class="swiper-slide__desc__price secondary-text">720Р</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+        </div>
+    </div>
+</section>
+
+<section id="home-D" class="p-1">
+    <div class="container">
+        <div class="delivery py-4">
+            <div class="delivery-item">
+                <div class="delivery-item__icon">
+                    <img src="./img/delivery.svg" alt="">
+                </div>
+                <div class="delivery-item__content">
+                    <h2 class="subtitle myt-0">ДОСТАВКА</h2>
+                    <p class="myt-0">Закажи доставку из любимых ресторанов</p>
+                    <a href="" class="btn btn-border btn-block hover-primary-bg">Заказать</a>
+                </div>
+            </div>
+            <div class="delivery-item">
+                <div class="delivery-item__icon">
+                    <img src="./img/food.svg" alt="">
+                </div>
+                <div class="delivery-item__content">
+                    <h2 class="subtitle myt-0">САМ ЗАБЕРУ</h2>
+                    <p>Заберите свои любимые блюда в любом из наших ресторанов в удобное для вас время</p>
+                    <a href="" class="btn btn-border btn-block hover-primary-bg">Узнать больше</a>
+                </div>
+            </div>
+            <div class="delivery-item">
+                <div class="delivery-item__icon">
+                    <img src="./img/chef.svg" alt="">
+                </div>
+                <div class="delivery-item__content">
+                    <h2 class="delivery-item__content__title subtitle myt-0">ИНФОРМАЦИОННО-СЕРВИСНАЯ СЛУЖБА</h2>
+                    <p>Уважаемые гости, мы с благодарностью примем похвалу и конструктивные замечания.</p>
+                    <a href="" class="btn btn-border btn-block hover-primary-bg">Оставить отзыв</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="p-1">
+    <div class="container">
+        <div class="footer-wrapper py-2">
+            <div class="footer__copyright">
+                <div class="footer__copyright__title">&copy;2021 «BEST SUSHI»</div>
+                <div class="footer__copyright__socials">
+                    <a class="secondary-text" href=""><i class="fab fa-vk fa-2x"></i></a>
+                    <a class="secondary-text" href=""><i class="fab fa-instagram fa-2x"></i></a>
+                    <a class="secondary-text" href=""><i class="fab fa-facebook fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <ul class="footer__menu__menu1">
+                    <li><a class="secondary-text" href="#">Меню</ф></li>
+                    <li><a class="secondary-text" href="#">Акции</a></li>
+                    <li><a class="secondary-text" href="#">Рестораны</a></li>
+                </ul>
+                <ul class="footer__menu__menu2">
+                    <li><a href="">Самовывоз</a></li>
+                    <li><a href="">Контроль качества</a></li>
+                    <li><a href="">Скидки</a></li>   
+                    <li><a href="">Партнеры</a></li>   
+                </ul>
+                <ul class="footer__menu__menu3">
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Контакты</a></li>   
+                    <li><a href="">Вакансии</a></li> 
+                </ul>
+            </div>
+            <div class="footer__phone">
+                <div class="subtitle">8 (812) 555-05-XX</div>
+                <p>Контактный телефон</p>
+                <a href="" class="btn btn-border-secondary hover-secondary-bg">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+ <script src="/bundled.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <!-- Initialize Swiper1 -->
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <!-- Initialize Swiper2 -->
+  <script>
+    var swiper2 = new Swiper('.swiper-container2', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+    // when window width is >= 320px
+    100: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    430: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    680: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+
+    980: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    },
+  }
+    });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

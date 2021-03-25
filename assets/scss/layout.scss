@@ -1,0 +1,294 @@
+header {
+  height: 130vh;
+  background: url("./img/main.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  * {
+    position: relative;
+    z-index: 3;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  a {
+    color: $lightColor;
+  }
+
+  .fas {
+    padding-right: 15px;
+  }
+
+  color: $lightColor;
+  .navbar-wrapper {
+    // background: $semiDarkColor;
+    background: url("./img/bg.png");
+    padding: 10px;
+    width: 100%;
+    // position: sticky;
+    // top: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        padding: 0 10px;
+      }
+    }
+
+    &__address {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 150px;
+      align-items: center;
+    }
+
+    &__phone {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .navbar-extra-wrapper {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .navbar-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__sidenav-trigger {
+      cursor: pointer;
+      display: none;
+      content: "";
+      position: relative;
+      width: 30px;
+      height: 2px;
+      background: #fff;
+      cursor: pointer;
+      margin: 10px 0;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        cursor: pointer;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        cursor: pointer;
+      }
+    }
+
+    .far {
+      padding-left: 8px;
+    }
+
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        padding: 0 10px;
+      }
+    }
+
+    &__logo {
+      img {
+        width: 120px;
+      }
+    }
+
+    &__profile {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .header-content {
+    text-transform: uppercase;
+    width: 800px;
+    max-width: 90%;
+    margin: auto;
+    padding-top: 100px;
+  }
+}
+
+footer {
+  background: url("./img/bg.png");
+  color: $lightColor;
+  position: relative;
+
+  * {
+    // position: relative;
+    z-index: 3;
+  }
+
+  &:before {
+    content: "";
+    background: $darkColor;
+    position: absolute;
+    opacity: 0.2;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  a {
+    color: $lightColor;
+  }
+
+  .footer__copyright {
+    line-height: 3;
+
+    &__socials {
+      position: relative;
+      .fab {
+        margin: 0 12px;
+        padding: 7px;
+        border: 2px solid $secondaryColor;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footer__menu {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      padding-bottom: 15px;
+    }
+
+    a {
+      border-bottom: 1px solid $mediumColor;
+      padding-bottom: 3px;
+    }
+  }
+
+  .footer__phone {
+    text-align: right;
+    position: relative;
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+    }
+
+    p {
+      display: none;
+    }
+  }
+}
+
+// стили для бокового меню
+.sidenav {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  max-width: 320px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: url("./img/bg.png");
+  z-index: 5;
+  padding: 30px 20px;
+  transition: 0.5s;
+  transform: translateX(-100%);
+  overflow: hidden;
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: $secondaryColor;
+    cursor: pointer;
+  }
+
+  &__menu {
+    margin-top: 50px;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: $lightColor;
+  }
+
+  &__menu__submenu {
+    border-top: 2px solid $secondaryColor;
+    padding-top: 20px;
+  }
+}
+
+.sidenav.visible {
+  transform: translateX(0);
+}
+
+// затемняем всю страницу при показе бокового меню
+body.darkened {
+  &::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+  }
+}
