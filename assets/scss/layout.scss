@@ -1,6 +1,6 @@
 header {
   height: 130vh;
-  background: url("./img/main.jpg") no-repeat center center;
+  background: url("../img/main.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
 
@@ -31,12 +31,9 @@ header {
 
   color: $lightColor;
   .navbar-wrapper {
-    // background: $semiDarkColor;
-    background: url("./img/bg.png");
+    background: url("../img/bg.png");
     padding: 10px;
     width: 100%;
-    // position: sticky;
-    // top: 0;
   }
 
   .navbar {
@@ -55,7 +52,14 @@ header {
       align-items: center;
 
       a {
-        padding: 0 10px;
+        padding: 10px;
+        margin: 0 5px;
+        border-bottom: 2px solid transparent;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        border-bottom: 2px solid $secondaryColor;
       }
     }
 
@@ -74,7 +78,7 @@ header {
   }
 
   .navbar-extra-wrapper {
-    padding: 10px;
+    padding: 10px 20px;
     width: 100%;
   }
 
@@ -124,7 +128,14 @@ header {
       justify-content: space-between;
 
       a {
-        padding: 0 10px;
+        padding: 10px;
+        margin: 0 5px;
+        border-bottom: 2px solid transparent;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        border-bottom: 2px solid $secondaryColor;
       }
     }
 
@@ -141,6 +152,10 @@ header {
       a {
         padding: 0 10px;
       }
+
+      a:hover {
+        color: $primaryColor;
+      }
     }
   }
 
@@ -154,12 +169,11 @@ header {
 }
 
 footer {
-  background: url("./img/bg.png");
+  background: url("../img/bg.png");
   color: $lightColor;
   position: relative;
 
   * {
-    // position: relative;
     z-index: 3;
   }
 
@@ -213,6 +227,10 @@ footer {
       border-bottom: 1px solid $mediumColor;
       padding-bottom: 3px;
     }
+
+    a:hover {
+      color: $primaryColor;
+    }
   }
 
   .footer__phone {
@@ -239,10 +257,10 @@ footer {
   left: 0;
   top: 0;
   bottom: 0;
-  background: url("./img/bg.png");
-  z-index: 5;
+  background: url("../img/bg.png");
+  z-index: 20;
   padding: 30px 20px;
-  transition: 0.5s;
+  transition: 0.3s;
   transform: translateX(-100%);
   overflow: hidden;
 
@@ -265,6 +283,10 @@ footer {
 
   a {
     color: $lightColor;
+  }
+
+  a:hover {
+    color: $primaryColor;
   }
 
   &__menu__submenu {

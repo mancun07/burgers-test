@@ -5,12 +5,12 @@ section#home-A {
     gap: 3rem;
     justify-content: center;
 
-    img {
-      width: 70px;
-    }
-
     &__item {
       text-align: center;
+
+      i.fas {
+        color: $primaryColor;
+      }
 
       p {
         text-transform: uppercase;
@@ -21,9 +21,7 @@ section#home-A {
 }
 
 section#home-C {
-  background: url("./img/bg.png") repeat;
-  // background-size: cover;
-  // height: 75vh;
+  background: url("../img/bg.png") repeat;
   color: $lightColor;
 
   .swiper-slide-item {
@@ -42,18 +40,17 @@ section#home-D {
   .delivery {
     display: flex;
     justify-content: space-between;
-    // flex-wrap: wrap;
     gap: 1rem;
 
     .delivery-item {
       display: flex;
       justify-content: space-between;
-      // align-items: stretch;
       gap: 1rem;
 
       &__icon {
-        img {
-          width: 80px;
+        i.fas {
+          color: $primaryColor;
+          margin-bottom: 30px;
         }
       }
       &__content {

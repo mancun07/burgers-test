@@ -6,13 +6,12 @@ const config = {
     entry: './assets/main.js',
     output: {
         filename: 'bundled.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'docs')
     },
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, 'docs'),
         inline: true,
         hot: true
-    //    host: '0.0.0.0'
     },
     mode: 'development',
     plugins: [ ],
