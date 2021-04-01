@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d docs",
     "dev": "webpack serve",
     "build": "webpack"
   
